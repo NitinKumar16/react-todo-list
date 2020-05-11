@@ -9,35 +9,50 @@ import TodoList from './components/TodoList';
 
 class App extends Component {
   state={
-    items:[{id:1,item:"Brush"},{id:2,item:"plan your day"},{id:3,item:"Workout"}],
+    items:[],
     id: uuid(),
     item:"",
     editItem:false
   };
   handleChange=(e)=>{
-    console.log('handleChange')
-  }
+    this.setState({
+      item: e.target.value
+    });
+  };
   handleSubmit =(e)=>{
-    console.log('handleSubmit')
-  }
+    e.preventDefault();
+    const newItem={
+      id:this.state.id,
+      title:this.state.item
+    };
+    const updatedItems=[...this.state.items,newItem]
+    this.setState({
+      items:updatedItems,
+      item: " ",
+      id: uuid(),
+      editItem:false
+    },
+    ()=> console.log(this.state)
+    );
+  };
   clearList =()=>{
     console.log('clearList')
   }
-  handleDelete =()=>{
+  handleDelete = id =>{
     console.log('handle edit ${id}')
   }
-  handleEdit =()=>{
+  handleEdit = id =>{
     console.log('edit edit ${id}')
   }
   render() {
-    console.log(this.state);
     return (
       <div className="App-header">
       <div className="container">
         <div className="row">
-          <div className="headline">Todo-list</div>
             <div className="col-10 mx-auto col-md-8 mt-5">
+            <h5 className="title">Todo-List</h5>
             <TodoInput item={this.state.item} 
+
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             editItem={this.state.editItem}/>

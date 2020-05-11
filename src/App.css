@@ -4,8 +4,6 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  align-items: center;
-  justify-content:center;
   font-size: calc(10px + 2vmin);
   background: #003973;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, rgb(184, 184, 152), #011f3d);  /* Chrome 10-25, Safari 5.1-6 */
@@ -13,11 +11,9 @@
   
 }
 
-.headline{
+.title{
     font-size: 95px;
     font-family: Besteam-Font;
-    color:rgb(0, 0, 0);
-    position: absolute;
-    top: 0em;
-    left: 5in;
+    color: white;
+    text-align: center;
     }
