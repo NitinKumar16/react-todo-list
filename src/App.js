@@ -31,15 +31,14 @@ class App extends Component {
       item: " ",
       id: uuid(),
       editItem:false
-    },
-    ()=> console.log(this.state)
+    } 
     );
   };
   clearList =()=>{
     console.log('clearList')
   }
   handleDelete = id =>{
-    console.log('handle edit ${id}')
+    console.log('handle delete ${id}')
   }
   handleEdit = id =>{
     console.log('edit edit ${id}')
