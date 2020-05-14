@@ -1,25 +1,12 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Sandblast',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Besteam-Font',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Sandblast';
-  src: local('Sandblast'), url(./fonts/Sandblast.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Belagia-Demo';
-  src: local('Belagia-Demo'), url(./fonts/Belagia-Demo.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Superion';
-  src: local('Superion'), url(./fonts/Superion.otf) format('truetype');
-}
 @font-face {
   font-family: 'Besteam-Font';
   src: local('Besteam-Font'), url(./fonts/Besteam-Font.ttf) format('truetype');
