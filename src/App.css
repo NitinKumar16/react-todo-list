@@ -11,9 +11,19 @@
   
 }
 
+@font-face {
+  font-family: 'Besteam-Font';
+  src: local('Besteam-Font'), url(./fonts/Besteam-Font.ttf) format('truetype');
+}
+
 .title{
     font-size: 80px;
     font-family: Besteam-Font;
     color: white;
     text-align: center;
     }
+
+.list-group{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}

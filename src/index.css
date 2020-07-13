@@ -7,10 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Besteam-Font';
-  src: local('Besteam-Font'), url(./fonts/Besteam-Font.ttf) format('truetype');
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
